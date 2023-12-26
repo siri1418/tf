@@ -5,3 +5,19 @@ variable "rg_variable" {
     })
   
 }
+variable "vnet_variable" {
+  type = object({
+    name = string
+    location = string
+    address_space = string
+    
+  })
+  
+}
+variable "subnet_variable" {
+  type = object({
+    name = string
+     address_prefixes = string
+  })
+  
+}
